@@ -11,7 +11,10 @@ st.set_page_config(page_title="UMKMSehat", page_icon="🩺", layout="centered")
 # ------------------------------------------------------------------
 st.markdown("""
 <style>
-html, body, [class*="css"] { font-size: 17px; }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+html, body, [class*="css"] { font-size: 17px; font-family: 'Inter', sans-serif; }
+h1, h2, h3 { font-family: 'Poppins', sans-serif; letter-spacing: 0.02em; color: #2A2320; }
 h1 { font-size: 2.1rem !important; }
 h2 { font-size: 1.5rem !important; }
 h3 { font-size: 1.25rem !important; }
@@ -20,19 +23,27 @@ h3 { font-size: 1.25rem !important; }
     padding: 0.6rem 1.2rem;
     font-weight: 600;
     font-size: 1.02rem;
+    background-color: #E8703A;
+    color: #FFFFFF;
+    border: none;
+}
+.stButton>button:hover {
+    background-color: #D4602C;
+    color: #FFFFFF;
 }
 div[data-testid="stMetric"] {
-    background-color: #EAF7F1;
+    background-color: #FFF3EA;
     border-radius: 12px;
     padding: 12px 14px;
-    border: 1px solid #D5EFE3;
+    border: 1px solid #F3DFCB;
 }
 .video-card {
     background-color: #FFFFFF;
-    border: 1px solid #E5E7EB;
+    border: 1px solid #EDE4D9;
     border-radius: 14px;
     padding: 16px;
     margin-bottom: 14px;
+    box-shadow: 0 2px 8px rgba(42, 35, 32, 0.05);
 }
 .badge {
     display: inline-block;
@@ -42,9 +53,9 @@ div[data-testid="stMetric"] {
     font-weight: 700;
     margin-right: 6px;
 }
-.badge-kategori { background-color: #EAF7F1; color: #0E9F6E; }
-.badge-gratis { background-color: #E8F0FE; color: #1A56DB; }
-.badge-premium { background-color: #FEF3E7; color: #C2740A; }
+.badge-kategori { background-color: #FFF3EA; color: #C2560F; }
+.badge-gratis { background-color: #E9F5EC; color: #1E8E3E; }
+.badge-premium { background-color: #FDF0DC; color: #B8720B; }
 </style>
 """, unsafe_allow_html=True)
 
